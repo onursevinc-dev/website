@@ -3,21 +3,18 @@
     "name": "about",
     "path": "/about",
     "component": "C:\\\\WebStormProjects\\\\NuxtSonDers\\\\7-middleware-cookies-localstorage-auth-baslangic-kodu\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_0ccc79dd"
+    "chunkName": "pages/about"
   },
   {
     "name": "auth",
     "path": "/auth",
     "component": "C:\\\\WebStormProjects\\\\NuxtSonDers\\\\7-middleware-cookies-localstorage-auth-baslangic-kodu\\\\pages\\\\auth\\\\index.vue",
-    "chunkName": "pages/auth/index",
-    "_name": "_50598f0c"
+    "chunkName": "pages/auth/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\WebStormProjects\\\\NuxtSonDers\\\\7-middleware-cookies-localstorage-auth-baslangic-kodu\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_2c8454a2"
+    "chunkName": "pages/index"
   }
 ]

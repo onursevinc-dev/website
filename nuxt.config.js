@@ -51,5 +51,6 @@ module.exports = {
     },
     env: {
         firebaseApiKey: 'AIzaSyAJIymEuLzC0cRFQtsutwz6Id4tJO1UC3Q'
-    }
+    },
+    serverMiddleware: []
 }

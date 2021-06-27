@@ -48,23 +48,10 @@
         },
         methods: {
             onSubmit() {
-                let url;
-                if (this.isUser) {
-                    url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=';
-
-                } else {
-                    url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=';
-                }
-                axios.post(url + process.env.firebaseApiKey,
-                    {email: this.user.email, password: this.user.password, returnSecureToken: true})
-                    .then(res => {
-                        console.log(res);
-                        this.$store.dispatch('login', res.data.idToken);
-                        this.$router.push('/');
-                    })
-                    .catch(err => {
-                        console.log(err);
-                    })
+                this.$store.dispatch('authUser', {user: this.user, isUser: this.isUser})
+                .then(res=>{
+                    this.$router.push('/')
+                })
             }
         }
     }

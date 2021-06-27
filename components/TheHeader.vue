@@ -10,9 +10,9 @@
                     <a class="nav-link" href="#">Hakkımda</a>
                 </nuxt-link>
             </ul>
-            <ul class="navbar-nav my-2 my-lg-0">
+            <ul v-show="this.$store.getters.isAuthenticated" class="navbar-nav my-2 my-lg-0">
                 <li class="nav-item">
-                    <a @click.prevent="logout()" class="nav-link" href="/auth">Çıkış Yap</a>
+                    <a @click.prevent="logout()" class="nav-link cursor-pointer">Çıkış Yap</a>
                 </li>
             </ul>
         </div>
@@ -25,11 +25,14 @@
         methods: {
             logout() {
                 this.$store.dispatch('logout');
+                this.$router.push('/auth');
             }
         }
     }
 </script>
 
 <style scoped>
-
+    .cursor-pointer {
+        cursor: pointer;
+    }
 </style>
